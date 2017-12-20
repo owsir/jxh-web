@@ -2,6 +2,9 @@
     class mydbda
     {
         var $host = "localhost";
+        //var $username = "jxh";
+        //var $password = "7c2485Za_";
+
         var $username = "root";
         var $password = "123456";
         var $database = "jxh";
@@ -23,7 +26,7 @@
             //2.判断是否连接成功
             if(mysqli_connect_error())
             {    
-                echo "连接失败";
+                echo "connect fail";
                 
                 //退出整个程序
                 exit;

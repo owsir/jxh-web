@@ -11,10 +11,7 @@ $sql="select count(*) from user where user_name='".$uname."' and user_pw='".$pwd
 $str = $db->Select($sql,"CX","jxh");
 if($str==1)
 {
-    $_SESSION["uname"]=$uname;//存在服务器，任何页面都可以调用
-    //$_SESSION["name"]=array（1,2,3,4,5）session可以存储任何内容
-    //用cookie写
-    //setcookie("uid",$uid);//定义cookie 会在客户端生成cookie文件
+    $_SESSION["uname"]=$uname;
     
     header("Location:/index.php");
 
@@ -22,6 +19,6 @@ if($str==1)
 else
 { 
     header("Location:/login.php");
-    }    
+}    
 
 ?>
