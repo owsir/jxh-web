@@ -1,7 +1,4 @@
-﻿<?php
-session_start();
-?>
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
@@ -27,7 +24,7 @@ session_start();
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-         <a class="navbar-brand hidden-sm" href="/">Home</a>
+        <a class="navbar-brand hidden-sm" href="/">Home</a>
       </div>
       <div class="navbar-collapse collapse" role="navigation">
         <ul class="nav navbar-nav" style="display: none;">
@@ -46,18 +43,34 @@ session_start();
   <div class="container main-content">
     
 <div class="area login-area">
-<?php
-if (isset($_SESSION['uname']) && !empty($_SESSION['uname'])) {
-    echo "Welcome：".$_SESSION['uname']."&nbsp;&nbsp;&nbsp;&nbsp;<a href='/handle/logouthandle.php'>Log out</a>";
-}else{
-    echo "Welcome, Please <a href='login.php'>Login</a> first.";
-}
-?>
+    <form class="form-horizontal" action="/handle/loginhandle.php" method="post">
+      <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="user_name" id="user_name" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pw" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control"  name="user_pw" id="user_pw" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Log in</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <a href="register.php">Register Now</a>
+        </div>
+      </div>
+    </form>
 </div>
 
   </div>
 </div>
-
 <footer class="footer">
   <div class="container">Footer</div>
 </footer>
