@@ -31,7 +31,7 @@ if($strCheck!=0)
    	return;
 }
 
-$sql="insert into user(user_name,user_pw,create_date)values('".$uname."','".$pwd."',now())";
+$sql="insert into user(user_name,user_pw,create_date)values('".$uname."','".md5($pwd)."',now())";
 $str = $db->Select($sql,"QT",$dbName);
 echo $str;
 
