@@ -30,6 +30,73 @@
           <input type="password" class="form-control"  name="user_repw" id="user_repw" placeholder="Password">
         </div>
       </div>
+
+      <div class="form-group">
+        <label for="repw" class="col-sm-2 control-label">From</label>
+        <div>
+
+
+  <div class="col-xs-3">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+  </div>
+
+  <div class="col-xs-3">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+  </div>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="repw" class="col-sm-2 control-label">Living</label>
+        <div>
+  <div class="col-xs-3">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+  </div>
+
+  <div class="col-xs-3">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+  </div>
+
+  <div class="col-xs-4">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+  </div>
+
+
+        </div>
+      </div>
+
+
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <button type="button" class="btn btn-default" id="btn">Sign In</button>

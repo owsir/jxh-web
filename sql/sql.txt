@@ -8,3 +8,1062 @@ create table user(
    create_date DATE,
    PRIMARY KEY (user_id)
 );
+
+
+create table countryandarea(
+   id INT NOT NULL AUTO_INCREMENT,
+   title VARCHAR(40) NOT NULL,
+   code VARCHAR(20) NOT NULL,
+   parentcode VARCHAR(20) NULL,
+   PRIMARY KEY (id)
+);
+
+
+
+
+insert into countryandarea(title, code, parentcode) values('中国', 'CHINA',null);
+insert into countryandarea(title, code, parentcode) values('阿尔巴尼亚', 'ALB',null);
+insert into countryandarea(title, code, parentcode) values('阿尔及利亚', 'DZA',null);
+insert into countryandarea(title, code, parentcode) values('阿富汗', 'AFG',null);
+insert into countryandarea(title, code, parentcode) values('阿根廷', 'ARG',null);
+insert into countryandarea(title, code, parentcode) values('阿拉伯联合酋长国', 'ARE',null);
+insert into countryandarea(title, code, parentcode) values('阿鲁巴', 'ABW',null);
+insert into countryandarea(title, code, parentcode) values('阿曼', 'OMN',null);
+insert into countryandarea(title, code, parentcode) values('阿塞拜疆', 'AZE',null);
+insert into countryandarea(title, code, parentcode) values('阿森松岛', 'ASC',null);
+insert into countryandarea(title, code, parentcode) values('埃及', 'EGY',null);
+insert into countryandarea(title, code, parentcode) values('埃塞俄比亚', 'ETH',null);
+insert into countryandarea(title, code, parentcode) values('爱尔兰', 'IRL',null);
+insert into countryandarea(title, code, parentcode) values('爱沙尼亚', 'EST',null);
+insert into countryandarea(title, code, parentcode) values('安道尔', 'AND',null);
+insert into countryandarea(title, code, parentcode) values('安哥拉', 'AGO',null);
+insert into countryandarea(title, code, parentcode) values('安圭拉', 'AIA',null);
+insert into countryandarea(title, code, parentcode) values('安提瓜岛和巴布达', 'ATG',null);
+insert into countryandarea(title, code, parentcode) values('奥地利', 'AUT',null);
+insert into countryandarea(title, code, parentcode) values('奥兰群岛', 'ALA',null);
+insert into countryandarea(title, code, parentcode) values('澳大利亚', 'AUS',null);
+insert into countryandarea(title, code, parentcode) values('巴巴多斯岛', 'BRB',null);
+insert into countryandarea(title, code, parentcode) values('巴布亚新几内亚', 'PNG',null);
+insert into countryandarea(title, code, parentcode) values('巴哈马', 'BHS',null);
+insert into countryandarea(title, code, parentcode) values('巴基斯坦', 'PAK',null);
+insert into countryandarea(title, code, parentcode) values('巴拉圭', 'PRY',null);
+insert into countryandarea(title, code, parentcode) values('巴勒斯坦', 'PSE',null);
+insert into countryandarea(title, code, parentcode) values('巴林', 'BHR',null);
+insert into countryandarea(title, code, parentcode) values('巴拿马', 'PAN',null);
+insert into countryandarea(title, code, parentcode) values('巴西', 'BRA',null);
+insert into countryandarea(title, code, parentcode) values('白俄罗斯', 'BLR',null);
+insert into countryandarea(title, code, parentcode) values('百慕大', 'BMU',null);
+insert into countryandarea(title, code, parentcode) values('保加利亚', 'BGR',null);
+insert into countryandarea(title, code, parentcode) values('北马里亚纳群岛', 'MNP',null);
+insert into countryandarea(title, code, parentcode) values('贝宁', 'BEN',null);
+insert into countryandarea(title, code, parentcode) values('比利时', 'BEL',null);
+insert into countryandarea(title, code, parentcode) values('冰岛', 'ISL',null);
+insert into countryandarea(title, code, parentcode) values('波多黎各', 'PRI',null);
+insert into countryandarea(title, code, parentcode) values('波兰', 'POL',null);
+insert into countryandarea(title, code, parentcode) values('波斯尼亚和黑塞哥维那', 'BIH',null);
+insert into countryandarea(title, code, parentcode) values('玻利维亚', 'BOL',null);
+insert into countryandarea(title, code, parentcode) values('伯利兹', 'BLZ',null);
+insert into countryandarea(title, code, parentcode) values('博茨瓦纳', 'BWA',null);
+insert into countryandarea(title, code, parentcode) values('不丹', 'BTN',null);
+insert into countryandarea(title, code, parentcode) values('布基纳法索', 'BFA',null);
+insert into countryandarea(title, code, parentcode) values('布隆迪', 'BDI',null);
+insert into countryandarea(title, code, parentcode) values('布韦岛', 'BVT',null);
+insert into countryandarea(title, code, parentcode) values('朝鲜', 'PRK',null);
+insert into countryandarea(title, code, parentcode) values('丹麦', 'DNK',null);
+insert into countryandarea(title, code, parentcode) values('德国', 'DEU',null);
+insert into countryandarea(title, code, parentcode) values('东帝汶', 'TLS',null);
+insert into countryandarea(title, code, parentcode) values('多哥', 'TGO',null);
+insert into countryandarea(title, code, parentcode) values('多米尼加', 'DMA',null);
+insert into countryandarea(title, code, parentcode) values('多米尼加共和国', 'DOM',null);
+insert into countryandarea(title, code, parentcode) values('俄罗斯', 'RUS',null);
+insert into countryandarea(title, code, parentcode) values('厄瓜多尔', 'ECU',null);
+insert into countryandarea(title, code, parentcode) values('厄立特里亚', 'ERI',null);
+insert into countryandarea(title, code, parentcode) values('法国', 'FRA',null);
+insert into countryandarea(title, code, parentcode) values('法罗群岛', 'FRO',null);
+insert into countryandarea(title, code, parentcode) values('法属波利尼西亚', 'PYF',null);
+insert into countryandarea(title, code, parentcode) values('法属圭亚那', 'GUF',null);
+insert into countryandarea(title, code, parentcode) values('法属南部领地', 'ATF',null);
+insert into countryandarea(title, code, parentcode) values('梵蒂冈', 'VAT',null);
+insert into countryandarea(title, code, parentcode) values('菲律宾', 'PHL',null);
+insert into countryandarea(title, code, parentcode) values('斐济', 'FJI',null);
+insert into countryandarea(title, code, parentcode) values('芬兰', 'FIN',null);
+insert into countryandarea(title, code, parentcode) values('佛得角', 'CPV',null);
+insert into countryandarea(title, code, parentcode) values('弗兰克群岛', 'FLK',null);
+insert into countryandarea(title, code, parentcode) values('冈比亚', 'GMB',null);
+insert into countryandarea(title, code, parentcode) values('刚果', 'COG',null);
+insert into countryandarea(title, code, parentcode) values('刚果民主共和国', 'COD',null);
+insert into countryandarea(title, code, parentcode) values('哥伦比亚', 'COL',null);
+insert into countryandarea(title, code, parentcode) values('哥斯达黎加', 'CRI',null);
+insert into countryandarea(title, code, parentcode) values('格恩西岛', 'GGY',null);
+insert into countryandarea(title, code, parentcode) values('格林纳达', 'GRD',null);
+insert into countryandarea(title, code, parentcode) values('格陵兰', 'GRL',null);
+insert into countryandarea(title, code, parentcode) values('古巴', 'CUB',null);
+insert into countryandarea(title, code, parentcode) values('瓜德罗普', 'GLP',null);
+insert into countryandarea(title, code, parentcode) values('关岛', 'GUM',null);
+insert into countryandarea(title, code, parentcode) values('圭亚那', 'GUY',null);
+insert into countryandarea(title, code, parentcode) values('哈萨克斯坦', 'KAZ',null);
+insert into countryandarea(title, code, parentcode) values('海地', 'HTI',null);
+insert into countryandarea(title, code, parentcode) values('韩国', 'KOR',null);
+insert into countryandarea(title, code, parentcode) values('荷兰', 'NLD',null);
+insert into countryandarea(title, code, parentcode) values('荷属安地列斯', 'ANT',null);
+insert into countryandarea(title, code, parentcode) values('赫德和麦克唐纳群岛', 'HMD',null);
+insert into countryandarea(title, code, parentcode) values('洪都拉斯', 'HND',null);
+insert into countryandarea(title, code, parentcode) values('基里巴斯', 'KIR',null);
+insert into countryandarea(title, code, parentcode) values('吉布提', 'DJI',null);
+insert into countryandarea(title, code, parentcode) values('吉尔吉斯斯坦', 'KGZ',null);
+insert into countryandarea(title, code, parentcode) values('几内亚', 'GIN',null);
+insert into countryandarea(title, code, parentcode) values('几内亚比绍', 'GNB',null);
+insert into countryandarea(title, code, parentcode) values('加拿大', 'CAN',null);
+insert into countryandarea(title, code, parentcode) values('加纳', 'GHA',null);
+insert into countryandarea(title, code, parentcode) values('加蓬', 'GAB',null);
+insert into countryandarea(title, code, parentcode) values('柬埔寨', 'KHM',null);
+insert into countryandarea(title, code, parentcode) values('捷克共和国', 'CZE',null);
+insert into countryandarea(title, code, parentcode) values('津巴布韦', 'ZWE',null);
+insert into countryandarea(title, code, parentcode) values('喀麦隆', 'CMR',null);
+insert into countryandarea(title, code, parentcode) values('卡塔尔', 'QAT',null);
+insert into countryandarea(title, code, parentcode) values('开曼群岛', 'CYM',null);
+insert into countryandarea(title, code, parentcode) values('科科斯群岛', 'CCK',null);
+insert into countryandarea(title, code, parentcode) values('科摩罗', 'COM',null);
+insert into countryandarea(title, code, parentcode) values('科特迪瓦', 'CIV',null);
+insert into countryandarea(title, code, parentcode) values('科威特', 'KWT',null);
+insert into countryandarea(title, code, parentcode) values('克罗地亚', 'HRV',null);
+insert into countryandarea(title, code, parentcode) values('肯尼亚', 'KEN',null);
+insert into countryandarea(title, code, parentcode) values('库克群岛', 'COK',null);
+insert into countryandarea(title, code, parentcode) values('拉脱维亚', 'LVA',null);
+insert into countryandarea(title, code, parentcode) values('莱索托', 'LSO',null);
+insert into countryandarea(title, code, parentcode) values('老挝', 'LAO',null);
+insert into countryandarea(title, code, parentcode) values('黎巴嫩', 'LBN',null);
+insert into countryandarea(title, code, parentcode) values('立陶宛', 'LTU',null);
+insert into countryandarea(title, code, parentcode) values('利比里亚', 'LBR',null);
+insert into countryandarea(title, code, parentcode) values('利比亚', 'LBY',null);
+insert into countryandarea(title, code, parentcode) values('列支敦士登', 'LIE',null);
+insert into countryandarea(title, code, parentcode) values('留尼旺岛', 'REU',null);
+insert into countryandarea(title, code, parentcode) values('卢森堡', 'LUX',null);
+insert into countryandarea(title, code, parentcode) values('卢旺达', 'RWA',null);
+insert into countryandarea(title, code, parentcode) values('罗马尼亚', 'ROU',null);
+insert into countryandarea(title, code, parentcode) values('马达加斯加', 'MDG',null);
+insert into countryandarea(title, code, parentcode) values('马尔代夫', 'MDV',null);
+insert into countryandarea(title, code, parentcode) values('马耳他', 'MLT',null);
+insert into countryandarea(title, code, parentcode) values('马拉维', 'MWI',null);
+insert into countryandarea(title, code, parentcode) values('马来西亚', 'MYS',null);
+insert into countryandarea(title, code, parentcode) values('马里', 'MLI',null);
+insert into countryandarea(title, code, parentcode) values('马其顿', 'MKD',null);
+insert into countryandarea(title, code, parentcode) values('马绍尔群岛', 'MHL',null);
+insert into countryandarea(title, code, parentcode) values('马提尼克', 'MTQ',null);
+insert into countryandarea(title, code, parentcode) values('马约特岛', 'MYT',null);
+insert into countryandarea(title, code, parentcode) values('曼岛', 'IMN',null);
+insert into countryandarea(title, code, parentcode) values('毛里求斯', 'MUS',null);
+insert into countryandarea(title, code, parentcode) values('毛里塔尼亚', 'MRT',null);
+insert into countryandarea(title, code, parentcode) values('美国', 'USA',null);
+insert into countryandarea(title, code, parentcode) values('美属萨摩亚', 'ASM',null);
+insert into countryandarea(title, code, parentcode) values('美属外岛', 'UMI',null);
+insert into countryandarea(title, code, parentcode) values('蒙古', 'MNG',null);
+insert into countryandarea(title, code, parentcode) values('蒙特塞拉特', 'MSR',null);
+insert into countryandarea(title, code, parentcode) values('孟加拉', 'BGD',null);
+insert into countryandarea(title, code, parentcode) values('秘鲁', 'PER',null);
+insert into countryandarea(title, code, parentcode) values('密克罗尼西亚', 'FSM',null);
+insert into countryandarea(title, code, parentcode) values('缅甸', 'MMR',null);
+insert into countryandarea(title, code, parentcode) values('摩尔多瓦', 'MDA',null);
+insert into countryandarea(title, code, parentcode) values('摩洛哥', 'MAR',null);
+insert into countryandarea(title, code, parentcode) values('摩纳哥', 'MCO',null);
+insert into countryandarea(title, code, parentcode) values('莫桑比克', 'MOZ',null);
+insert into countryandarea(title, code, parentcode) values('墨西哥', 'MEX',null);
+insert into countryandarea(title, code, parentcode) values('纳米比亚', 'NAM',null);
+insert into countryandarea(title, code, parentcode) values('南非', 'ZAF',null);
+insert into countryandarea(title, code, parentcode) values('南极洲', 'ATA',null);
+insert into countryandarea(title, code, parentcode) values('南乔治亚和南桑德威奇群岛', 'SGS',null);
+insert into countryandarea(title, code, parentcode) values('瑙鲁', 'NRU',null);
+insert into countryandarea(title, code, parentcode) values('尼泊尔', 'NPL',null);
+insert into countryandarea(title, code, parentcode) values('尼加拉瓜', 'NIC',null);
+insert into countryandarea(title, code, parentcode) values('尼日尔', 'NER',null);
+insert into countryandarea(title, code, parentcode) values('尼日利亚', 'NGA',null);
+insert into countryandarea(title, code, parentcode) values('纽埃', 'NIU',null);
+insert into countryandarea(title, code, parentcode) values('挪威', 'NOR',null);
+insert into countryandarea(title, code, parentcode) values('诺福克', 'NFK',null);
+insert into countryandarea(title, code, parentcode) values('帕劳群岛', 'PLW',null);
+insert into countryandarea(title, code, parentcode) values('皮特凯恩', 'PCN',null);
+insert into countryandarea(title, code, parentcode) values('葡萄牙', 'PRT',null);
+insert into countryandarea(title, code, parentcode) values('乔治亚', 'GEO',null);
+insert into countryandarea(title, code, parentcode) values('日本', 'JPN',null);
+insert into countryandarea(title, code, parentcode) values('瑞典', 'SWE',null);
+insert into countryandarea(title, code, parentcode) values('瑞士', 'CHE',null);
+insert into countryandarea(title, code, parentcode) values('萨尔瓦多', 'SLV',null);
+insert into countryandarea(title, code, parentcode) values('萨摩亚', 'WSM',null);
+insert into countryandarea(title, code, parentcode) values('塞尔维亚,黑山', 'SCG',null);
+insert into countryandarea(title, code, parentcode) values('塞拉利昂', 'SLE',null);
+insert into countryandarea(title, code, parentcode) values('塞内加尔', 'SEN',null);
+insert into countryandarea(title, code, parentcode) values('塞浦路斯', 'CYP',null);
+insert into countryandarea(title, code, parentcode) values('塞舌尔', 'SYC',null);
+insert into countryandarea(title, code, parentcode) values('沙特阿拉伯', 'SAU',null);
+insert into countryandarea(title, code, parentcode) values('圣诞岛', 'CXR',null);
+insert into countryandarea(title, code, parentcode) values('圣多美和普林西比', 'STP',null);
+insert into countryandarea(title, code, parentcode) values('圣赫勒拿', 'SHN',null);
+insert into countryandarea(title, code, parentcode) values('圣基茨和尼维斯', 'KNA',null);
+insert into countryandarea(title, code, parentcode) values('圣卢西亚', 'LCA',null);
+insert into countryandarea(title, code, parentcode) values('圣马力诺', 'SMR',null);
+insert into countryandarea(title, code, parentcode) values('圣皮埃尔和米克隆群岛', 'SPM',null);
+insert into countryandarea(title, code, parentcode) values('圣文森特和格林纳丁斯', 'VCT',null);
+insert into countryandarea(title, code, parentcode) values('斯里兰卡', 'LKA',null);
+insert into countryandarea(title, code, parentcode) values('斯洛伐克', 'SVK',null);
+insert into countryandarea(title, code, parentcode) values('斯洛文尼亚', 'SVN',null);
+insert into countryandarea(title, code, parentcode) values('斯瓦尔巴和扬马廷', 'SJM',null);
+insert into countryandarea(title, code, parentcode) values('斯威士兰', 'SWZ',null);
+insert into countryandarea(title, code, parentcode) values('苏丹', 'SDN',null);
+insert into countryandarea(title, code, parentcode) values('苏里南', 'SUR',null);
+insert into countryandarea(title, code, parentcode) values('所罗门群岛', 'SLB',null);
+insert into countryandarea(title, code, parentcode) values('索马里', 'SOM',null);
+insert into countryandarea(title, code, parentcode) values('塔吉克斯坦', 'TJK',null);
+insert into countryandarea(title, code, parentcode) values('泰国', 'THA',null);
+insert into countryandarea(title, code, parentcode) values('坦桑尼亚', 'TZA',null);
+insert into countryandarea(title, code, parentcode) values('汤加', 'TON',null);
+insert into countryandarea(title, code, parentcode) values('特克斯和凯克特斯群岛', 'TCA',null);
+insert into countryandarea(title, code, parentcode) values('特里斯坦达昆哈', 'TAA',null);
+insert into countryandarea(title, code, parentcode) values('特立尼达和多巴哥', 'TTO',null);
+insert into countryandarea(title, code, parentcode) values('突尼斯', 'TUN',null);
+insert into countryandarea(title, code, parentcode) values('图瓦卢', 'TUV',null);
+insert into countryandarea(title, code, parentcode) values('土耳其', 'TUR',null);
+insert into countryandarea(title, code, parentcode) values('土库曼斯坦', 'TKM',null);
+insert into countryandarea(title, code, parentcode) values('托克劳', 'TKL',null);
+insert into countryandarea(title, code, parentcode) values('瓦利斯和福图纳', 'WLF',null);
+insert into countryandarea(title, code, parentcode) values('瓦努阿图', 'VUT',null);
+insert into countryandarea(title, code, parentcode) values('危地马拉', 'GTM',null);
+insert into countryandarea(title, code, parentcode) values('维尔京群岛，美属', 'VIR',null);
+insert into countryandarea(title, code, parentcode) values('维尔京群岛，英属', 'VGB',null);
+insert into countryandarea(title, code, parentcode) values('委内瑞拉', 'VEN',null);
+insert into countryandarea(title, code, parentcode) values('文莱', 'BRN',null);
+insert into countryandarea(title, code, parentcode) values('乌干达', 'UGA',null);
+insert into countryandarea(title, code, parentcode) values('乌克兰', 'UKR',null);
+insert into countryandarea(title, code, parentcode) values('乌拉圭', 'URY',null);
+insert into countryandarea(title, code, parentcode) values('乌兹别克斯坦', 'UZB',null);
+insert into countryandarea(title, code, parentcode) values('西班牙', 'ESP',null);
+insert into countryandarea(title, code, parentcode) values('希腊', 'GRC',null);
+insert into countryandarea(title, code, parentcode) values('新加坡', 'SGP',null);
+insert into countryandarea(title, code, parentcode) values('新喀里多尼亚', 'NCL',null);
+insert into countryandarea(title, code, parentcode) values('新西兰', 'NZL',null);
+insert into countryandarea(title, code, parentcode) values('匈牙利', 'HUN',null);
+insert into countryandarea(title, code, parentcode) values('叙利亚', 'SYR',null);
+insert into countryandarea(title, code, parentcode) values('牙买加', 'JAM',null);
+insert into countryandarea(title, code, parentcode) values('亚美尼亚', 'ARM',null);
+insert into countryandarea(title, code, parentcode) values('也门', 'YEM',null);
+insert into countryandarea(title, code, parentcode) values('伊拉克', 'IRQ',null);
+insert into countryandarea(title, code, parentcode) values('伊朗', 'IRN',null);
+insert into countryandarea(title, code, parentcode) values('以色列', 'ISR',null);
+insert into countryandarea(title, code, parentcode) values('意大利', 'ITA',null);
+insert into countryandarea(title, code, parentcode) values('印度', 'IND',null);
+insert into countryandarea(title, code, parentcode) values('印度尼西亚', 'IDN',null);
+insert into countryandarea(title, code, parentcode) values('英国', 'GBR',null);
+insert into countryandarea(title, code, parentcode) values('英属印度洋领地', 'IOT',null);
+insert into countryandarea(title, code, parentcode) values('约旦', 'JOR',null);
+insert into countryandarea(title, code, parentcode) values('越南', 'VNM',null);
+insert into countryandarea(title, code, parentcode) values('赞比亚', 'ZMB',null);
+insert into countryandarea(title, code, parentcode) values('泽西岛', 'JEY',null);
+insert into countryandarea(title, code, parentcode) values('乍得', 'TCD',null);
+insert into countryandarea(title, code, parentcode) values('直布罗陀', 'GIB',null);
+insert into countryandarea(title, code, parentcode) values('智利', 'CHL',null);
+insert into countryandarea(title, code, parentcode) values('中非共和国', 'CAF',null);
+
+insert into countryandarea(title, code, parentcode) values('中国香港', 'HK',null);
+insert into countryandarea(title, code, parentcode) values('中国澳门', 'MACAO',null);
+insert into countryandarea(title, code, parentcode) values('中国台湾', 'TAIWAN',null);
+
+update countryandarea set parentcode='CHINA' where title='中国香港';
+update countryandarea set parentcode='CHINA' where title='中国澳门';
+update countryandarea set parentcode='CHINA' where title='中国台湾';
+
+
+insert into countryandarea(title, code, parentcode)
+
+values('北京','BJ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('上海','SH','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('天津','TJ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('重庆','CQ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('河北','HB','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('山西','SX','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('内蒙古','NMG','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('辽宁','LN','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('吉林','JL','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('黑龙江','HLJ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('江苏','JS','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('浙江','ZJ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('安徽','AH','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('福建','FJ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('江西','JX','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('山东','SD','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('河南','HEN','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('湖北','HB','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('湖南','HUN','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('广东','GD','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('广西','GX','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('海南','HAIN','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('四川','SC','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('贵州','GUIZ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('云南','YN','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('西藏','XZ','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('陕西','SHAANXI','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('甘肃','GS','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('青海','QH','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('宁夏','NX','CHINA');
+
+insert into countryandarea(title, code, parentcode)
+
+values('新疆','XJ','CHINA');
+
+
+SELECT * FROM `countryandarea` WHERE parentcode='CHINA'
+
+update countryandarea set code='010' where title='北京';
+update countryandarea set code='021' where title='上海';
+update countryandarea set code='022' where title='天津';
+update countryandarea set code='023' where title='重庆';
+update countryandarea set code='HEB' where title='河北';
+
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('石家庄', '0311', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('唐山', '0315', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('秦皇岛', '0335', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('邯郸', '0310', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('邢台', '0319', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('保定', '0312', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('张家口', '0313', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('承德', '0314', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('沧州', '0317', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('廊坊', '0316', '河北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES ('衡水', '0318', '河北');
+
+
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('海口', '0898', '海南');
+INSERT INTO countryandarea(title, code, parentcode)VALUES('三亚', '0898sy', '海南');
+INSERT INTO countryandarea(title, code, parentcode)VALUES('儋州', '0898dz', '海南');
+INSERT INTO countryandarea(title, code, parentcode)VALUES('三沙', '0898ss', '海南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('太原', '0351', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('大同', '0352', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阳泉', '0353', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('长治', '0355', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('晋城', '0356', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('朔州', '0349', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('忻州', '0350', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('吕梁', '0358', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('晋中', '0354', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('临汾', '0357', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('运城', '0359', '山西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('呼和浩特', '0471', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('包头', '0472', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('乌海', '0473', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('赤峰', '0476', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('通辽', '0475', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('呼伦贝尔', '0470', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('兴安盟', '0482', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('锡林郭勒盟', '0479', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('乌兰察布', '0474', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('鄂尔多斯', '0477', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('巴彦淖尔', '0478', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阿拉善盟', '0483', '内蒙古');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('沈阳', '024', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('大连', '0411', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('鞍山', '0412', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('抚顺', '0413', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('本溪', '0414', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('丹东', '0415', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('锦州', '0416', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('营口', '0417', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阜新', '0418', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('辽阳', '0419', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('盘锦', '0427', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('铁岭', '0410', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('朝阳', '0421', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('葫芦岛', '0429', '辽宁');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('长春', '0431', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('吉林', '0432', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('四平', '0434', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('辽源', '0437', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('通化', '0435', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('白山', '0439', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('松原', '0438', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('白城', '0436', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('延边', '0433', '吉林');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('哈尔滨', '0451', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('齐齐哈尔', '0452', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('鸡西', '0467', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('鹤岗', '0468', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('双鸭山', '0469', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('大庆', '0459', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('伊春', '0458', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('佳木斯', '0454', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('七台河', '0464', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('牡丹江', '0453', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('黑河', '0456', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('绥化', '0455', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('大兴安岭', '0457', '黑龙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('南京', '025', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('无锡', '0510', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('徐州', '0516', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('常州', '0519', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('苏州', '0512', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('南通', '0513', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('连云港', '0518', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('淮安', '0517', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宿迁', '0527', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('盐城', '0515', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('扬州', '0514', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('泰州', '0523', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('镇江', '0511', '江苏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('杭州', '0571', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宁波', '0574', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('温州', '0577', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('嘉兴', '0573', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('湖州', '0572', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('绍兴', '0575', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('金华', '0579', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('衢州', '0570', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('舟山', '0580', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('台州', '0576', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('丽水', '0578', '浙江');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('合肥', '0551', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('芜湖', '0553', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('蚌埠', '0552', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('淮南', '0554', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('马鞍山', '0555', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('淮北', '0561', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('铜陵', '0562', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('安庆', '0556', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('黄山', '0559', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('滁州', '0550', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阜阳', '0558', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宿州', '0557', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('六安', '0564', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宣城', '0563', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('巢湖', '0565', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('池州', '0566', '安徽');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('福州', '0591', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('厦门', '0592', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('莆田', '0594', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('三明', '0598', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('泉州', '0595', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('漳州', '0596', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('南平', '0599', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('龙岩', '0597', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宁德', '0593', '福建');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('南昌', '0791', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('景德镇', '0798', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('萍乡', '0799', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('九江', '0792', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('新余', '0790', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('鹰潭', '0701', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('赣州', '0797', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宜春', '0795', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('上饶', '0793', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('吉安', '0796', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('抚州', '0794', '江西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('济南', '0531', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('青岛', '0532', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('淄博', '0533', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('枣庄', '0632', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('东营', '0546', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('烟台', '0535', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('潍坊', '0536', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('济宁', '0537', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('泰安', '0538', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('威海', '0631', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('日照', '0633', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('莱芜', '0634', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('滨州', '0543', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('德州', '0534', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('聊城', '0635', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('临沂', '0539', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('荷泽', '0530', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('曹县', '0530', '山东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('郑州', '0371', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('开封', '0378', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('洛阳', '0379', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('平顶山', '0375', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('安阳', '0372', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('鹤壁', '0392', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('新乡', '0373', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('焦作', '0391', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('濮阳', '0393', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('许昌', '0374', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('漯河', '0395', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('三门峡', '0398', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('南阳', '0377', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('商丘', '0370', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('周口', '0394', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('驻马店', '0396', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('信阳', '0376', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('济源', '0391', '河南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('武汉', '027', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('黄石', '0714', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('十堰', '0719', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宜昌', '0717', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('襄阳', '0710', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('鄂州', '0711', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('荆门', '0724', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('孝感', '0712', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('黄冈', '0713', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('荆州', '0716', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('天门', '0728', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('随州', '0722', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('咸宁', '0715', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('恩施', '0718', '湖北');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('长沙', '0731', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('湘潭', '0731', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('株洲', '0731', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('衡阳', '0734', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('邵阳', '0739', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('岳阳', '0730', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('常德', '0736', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('张家界', '0744', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('益阳', '0737', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('郴州', '0735', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('永州', '0746', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('怀化', '0745', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('娄底', '0738', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('湘西', '0743', '湖南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('广州', '020', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('韶关', '0751', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('深圳', '0755', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('珠海', '0756', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('汕头', '0754', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('江门', '0750','广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('湛江', '0759', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('茂名', '0668', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('肇庆', '0758', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('惠州', '0752', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('梅州', '0753', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('汕尾', '0660', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('河源', '0762', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阳江', '0662', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('清远', '0763', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('东莞', '0769', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('中山', '0760', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('潮州', '0768', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('揭阳', '0663', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('佛山', '0757', '广东');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('南宁', '0771', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('柳州', '0772', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('桂林', '0773', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('梧州', '0774', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('北海', '0779', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('防城港', '0770', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('贵港', '0775', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('钦州', '0777', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('百色', '0776', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('河池', '0778', '广西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('成都', '028', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('自贡', '0813', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('泸州', '0830', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('攀枝花', '0812', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('德阳', '0838', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('绵阳', '0816', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('广元', '0839', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('遂宁', '0825', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('内江', '0832', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('乐山', '0833', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('南充', '0817', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('广安', '0826', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宜宾', '0831', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('达州', '0818', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('雅安', '0835', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阿坝', '0837', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('甘孜', '0836', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('凉山', '0834', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('巴中', '0827', '四川');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('贵阳', '0851', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('六盘水', '0858', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('遵义', '0852', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('铜仁', '0856', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('毕节', '0857', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('安顺', '0853', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('黔东南', '0855', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('黔南', '0854', '贵州');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('昆明', '0871', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('昭通', '0870', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('曲靖', '0874', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('楚雄', '0878', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('玉溪', '0877', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('红河', '0873', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('文山', '0876', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('思茅', '0879', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('西双版纳', '0691', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('大理', '0872', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('保山', '0875', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('德宏', '0692', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('丽江', '0888', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('怒江', '0886', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('迪庆', '0887', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('临沧', '0883', '云南');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('拉萨', '0891', '西藏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('昌都', '0895', '西藏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('山南', '0893', '西藏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('日喀则', '0892', '西藏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('那曲', '0896', '西藏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阿里', '0897', '西藏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('林芝', '0894', '西藏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('西安', '029', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('咸阳', '029xy', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('铜川', '0919', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('宝鸡', '0917', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('渭南', '0913', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('汉中', '0916', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('安康', '0915', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('商洛', '0914', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('延安', '0911', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('榆林', '0912', '陕西');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('兰州', '0931', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('嘉峪关', '0937', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('金昌', '0935', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('白银', '0943', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('天水', '0938', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('酒泉', '0937', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('张掖', '0936', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('武威', '0935', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('定西', '0935', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('陇南', '0939', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('平凉', '0933', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('庆阳', '0934', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('临夏', '0930', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('甘南', '0941', '甘肃');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('西宁', '0971', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('海东', '0972', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('海北', '0970', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('黄南', '0973', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('海南', '0974', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('果洛', '0975', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('玉树', '0976', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('海西', '0977', '青海');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('银川', '0951', '宁夏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('石嘴山', '0952', '宁夏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('吴忠', '0953', '宁夏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('固原', '0954', '宁夏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('中卫', '0955', '宁夏');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('乌鲁木齐', '0991', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('克拉玛依', '0990', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('石河子', '0993', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('吐鲁番', '0995', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('哈密', '0905', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('昌吉', '0994', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('博尔塔拉', '0909', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('巴音郭楞', '0996', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阿克苏', '0997', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('克孜勒苏柯尔克孜', '0908', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('喀什', '0998', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('和田', '0903', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('伊犁哈萨克', '0999', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('奎屯', '0992', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('塔城', '0901', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('阿勒泰', '0906', '新疆');
+
+INSERT INTO countryandarea(title, code, parentcode)VALUES('乌苏', '0992', '新疆');
