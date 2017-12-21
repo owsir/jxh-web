@@ -1,12 +1,12 @@
 <?php
     class mydbda
     {
-        var $host = "localhost";
+        var $host = "127.0.0.1";
         //var $username = "jxh";
         //var $password = "7c2485Za_";
 
         var $username = "root";
-        var $password = "123456";
+        var $password = "666666";
         var $database = "jxh";
         
         /**
@@ -22,7 +22,7 @@
             
             //1.造连接对象
             $db = new mysqli($this->host,$this->username,$this->password,$data);
-            
+            mysqli_query($db,"SET NAMES utf8");
             //2.判断是否连接成功
             if(mysqli_connect_error())
             {    
@@ -33,12 +33,13 @@
             }
             else
             {
-                //4.执行SQL语句
-                
+
                 $result = $db->query($sql);
                 
                 if($type == "CX")
                 {
+                    return $result->fetch_row();
+
                     $str = "";
                     
                     while($row = $result->fetch_row())
@@ -53,6 +54,17 @@
                     }
                     $str = substr($str,0,strlen($str)-1);
                     return $str;
+                }
+                else if($type == "NEW")
+                {
+                    if($result)
+                    {
+                        return mysqli_insert_id($db);
+                    }
+                    else
+                    {
+                        return 0;
+                    }
                 }
                 else
                 {

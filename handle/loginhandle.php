@@ -5,15 +5,16 @@ $pwd = $_POST["user_pw"];
 include("mydb.php");
 $db=new mydbda();
 
-$sql="select count(*) from user where user_name='".$uname."' and user_pw='".md5($pwd)."'";
+$sql="select user_id,user_name,forum_id from user where user_name='".$uname."' and user_pw='".md5($pwd)."' limit 1";
 
-$str = $db->Select($sql,"CX","jxh");
-if($str==1)
-{
-    $_SESSION["uname"]=$uname;
-    
-    header("Location:/index.php");
+$re = $db->Select($sql,"CX","jxh");
 
+                    if(is_array($re))
+                    {
+                        $_SESSION["uname"]=$uname;
+                        $_SESSION["uid"]=$re[0];
+                        $_SESSION["forumid"]=$re[2];
+                        header("Location:/index.php");
  }
 else
 { 

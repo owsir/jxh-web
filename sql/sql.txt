@@ -5,8 +5,51 @@ create table user(
    user_id INT NOT NULL AUTO_INCREMENT,
    user_name VARCHAR(100) NOT NULL,
    user_pw VARCHAR(100) NOT NULL,
-   create_date DATE,
+   create_date DATETIME,
    PRIMARY KEY (user_id)
+);
+
+
+ALTER TABLE user ADD home_province VARCHAR(20) null;
+ALTER TABLE user ADD home_city VARCHAR(20) null;
+ALTER TABLE user ADD living_country VARCHAR(20) null;
+ALTER TABLE user ADD living_province VARCHAR(20) null;
+ALTER TABLE user ADD living_city VARCHAR(20) null;
+ALTER TABLE user ADD forum_id int null;
+
+
+create table forum(
+   id INT NOT NULL AUTO_INCREMENT,
+   home_province VARCHAR(20) NULL,
+   home_city VARCHAR(20) NULL,
+   living_country VARCHAR(20) NULL,
+   living_province VARCHAR(20) NULL,
+   living_city VARCHAR(20) NULL,
+   PRIMARY KEY (id)
+);
+
+create table forumpost(
+   id INT NOT NULL AUTO_INCREMENT,
+   title VARCHAR(200) NULL,
+   content text NULL,
+   forum_id int NULL,
+   user_id int NULL,
+   user_name VARCHAR(100) NULL,
+   create_date DATETIME,
+   admin_delete boolean null,
+   PRIMARY KEY (id)
+);
+
+
+create table forumpostreply(
+   id INT NOT NULL AUTO_INCREMENT,
+   content text NULL,
+   post_id int NULL,
+   user_id int NULL,
+   user_name VARCHAR(100) NULL,
+   create_date DATETIME,
+   admin_delete boolean null,
+   PRIMARY KEY (id)
 );
 
 
@@ -270,7 +313,6 @@ update countryandarea set parentcode='CHINA' where title='中国香港';
 update countryandarea set parentcode='CHINA' where title='中国澳门';
 update countryandarea set parentcode='CHINA' where title='中国台湾';
 
-
 insert into countryandarea(title, code, parentcode)
 
 values('北京','BJ','CHINA');
@@ -395,8 +437,6 @@ insert into countryandarea(title, code, parentcode)
 
 values('新疆','XJ','CHINA');
 
-
-SELECT * FROM `countryandarea` WHERE parentcode='CHINA'
 
 update countryandarea set code='010' where title='北京';
 update countryandarea set code='021' where title='上海';
@@ -1067,3 +1107,7 @@ INSERT INTO countryandarea(title, code, parentcode)VALUES('塔城', '0901', '新
 INSERT INTO countryandarea(title, code, parentcode)VALUES('阿勒泰', '0906', '新疆');
 
 INSERT INTO countryandarea(title, code, parentcode)VALUES('乌苏', '0992', '新疆');
+
+update countryandarea set code='ZGHK' where title='中国香港';
+update countryandarea set code='ZGAM' where title='中国澳门';
+update countryandarea set code='ZGTW' where title='中国台湾';
