@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -13,8 +13,7 @@ session_start();
       <div class="area userinfo-area">
       <?php
       if (isset($_SESSION['uname']) && !empty($_SESSION['uname'])) {
-          echo "Welcome：".$_SESSION['uname']." Your Id: ".$_SESSION['uid'].
-          " Forum Id: ".$_SESSION['forumid']
+          echo "Welcome：".$_SESSION['uname']." ".$_SESSION['home_province']."人在".$_SESSION["living_city"]
           ."&nbsp;&nbsp;&nbsp;&nbsp;<a href='/post.php'>Write a post</a>&nbsp;&nbsp;&nbsp;&nbsp;
           <a href='/handle/logouthandle.php'>Log out</a>";
       }else{
@@ -23,9 +22,15 @@ session_start();
       ?>
       </div>
 <?php
-  $host="127.0.0.1";
+
+if (isset($_SESSION['forumid']) && !empty($_SESSION['forumid'])) {
+
+  $host="localhost";
   $user="root";
-  $pwd="666666";
+  $pwd="123456";
+
+  //$user="jxh";
+  //$pwd="7c2485Za_";
   $db="jxh";
    
   $linkID =mysql_connect($host,$user,$pwd); 
@@ -54,11 +59,16 @@ session_start();
   }
   mysql_free_result($result); 
   mysql_close($linkID); 
+}
+
 ?>
+
+
+
+
+ 
     </div>
   </div>
-
-  
 <?php include("footer.php"); ?>
  </body>
 </html>

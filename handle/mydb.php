@@ -1,88 +1,101 @@
 <?php
-    class mydbda
+    class mydb
     {
-        var $host = "127.0.0.1";
+        //var $host = "127.0.0.1";
         //var $username = "jxh";
         //var $password = "7c2485Za_";
 
+        var $host = "localhost";
         var $username = "root";
-        var $password = "666666";
+        var $password = "123456";
+
+        //var $username = "jxh";
+        //var $password = "7c2485Za_";
+
+        // var $host = "127.0.0.1";
+        // var $username = "root";
+        // var $password = "666666";
+
         var $database = "jxh";
-        
-        /**
-            功能：执行SQL语句，返回结果
-            参数：$sql:要执行的SQL语句
-                 $type：SQL语句的类型，CX代表查询，QT代表其他
-                 $data:要操作的数据库
-            返回值：如果是查询，返回结果集
-                  如果是其他语句，执行成功返回OK，失败返回NO
-        */
-        function Select($sql,$type,$data)
+
+
+        function GetValue($sql)
         {
-            
-            //1.造连接对象
-            $db = new mysqli($this->host,$this->username,$this->password,$data);
-            mysqli_query($db,"SET NAMES utf8");
-            //2.判断是否连接成功
+            $db = new mysqli($this->host,$this->username,$this->password,$this->database);
             if(mysqli_connect_error())
             {    
                 echo "connect fail";
-                
-                //退出整个程序
                 exit;
+            }
+            $result = $db->query($sql);
+            $str = "";
+
+            while($row = $result->fetch_row())
+            {
+                if(count($row)>0)
+                {
+                    $str=$row[0];
+                }
+            }
+            return $str;
+        }
+
+        function GetRows($sql)
+        {
+            $db = new mysqli($this->host,$this->username,$this->password,$this->database);
+            if(mysqli_connect_error())
+            {    
+                echo "connect fail";
+                exit;
+            }
+            $result = $db->query($sql);
+            return $result->fetch_row();
+        }
+
+        function Add($sql)
+        {
+            $db = new mysqli($this->host,$this->username,$this->password,$this->database);
+            if(mysqli_connect_error())
+            {    
+                echo "connect fail";
+                exit;
+            }
+            $result = $db->query($sql);
+            if($result)
+            {
+                return mysqli_insert_id($db);
             }
             else
             {
-
-                $result = $db->query($sql);
-                
-                if($type == "CX")
-                {
-                    return $result->fetch_row();
-
-                    $str = "";
-                    
-                    while($row = $result->fetch_row())
-                    {
-                        for($i=0;$i<count($row);$i++)
-                        {
-                            $str=$str.$row[$i]."^";
-                        }
-                        $str = substr($str,0,strlen($str)-1);
-                        $str = $str."|";
-                        
-                    }
-                    $str = substr($str,0,strlen($str)-1);
-                    return $str;
-                }
-                else if($type == "NEW")
-                {
-                    if($result)
-                    {
-                        return mysqli_insert_id($db);
-                    }
-                    else
-                    {
-                        return 0;
-                    }
-                }
-                else
-                {
-                    if($result)
-                    {
-                        return "OK";
-                    }
-                    else
-                    {
-                        return "NO";
-                    }
-                }
-                
-        
+                return 0;
             }
         }
 
-        
+        function Update($sql)
+        {
+            $result = $db->query($sql);
+            if($result)
+            {
+                return "OK";
+            }
+            else
+            {
+                return "NO";
+            }
+        }
+
+        function Delete($sql)
+        {
+            $result = $db->query($sql);
+            if($result)
+            {
+                return "OK";
+            }
+            else
+            {
+                return "NO";
+            }
+        }
     
     }
 ?>

@@ -36,7 +36,7 @@
         <div>
 
 
-  <div class="col-xs-3">
+  <div class="col-xs-5">
           <select class="form-control" id="homeprovince">
           </select>
   </div>
@@ -54,7 +54,7 @@
         <div>
 
 
-  <div class="col-xs-3">
+  <div class="col-xs-5">
           <select class="form-control" id="livingprovince">
           </select>
   </div>
@@ -150,6 +150,15 @@ $('#livingprovince').change(function(){
         var livingprovince=$("#livingprovince").val();
         var livingcity=$("#livingcity").val();
 
+        var zxs=["北京","上海","天津","重庆"];
+        if($.inArray(homeprovince, zxs)!=-1)
+        {
+          homecity=homeprovince;
+        }
+        if($.inArray(livingprovince, zxs)!=-1)
+        {
+          livingcity=livingprovince;
+        }
         $.ajax({
             url:"handle/registerhandle.php",
             data:{uname:uname,
